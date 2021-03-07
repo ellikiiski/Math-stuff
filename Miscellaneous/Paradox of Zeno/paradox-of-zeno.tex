@@ -1,0 +1,59 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{parskip}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+
+{\large
+Elli Kiiski
+\par
+Edited version of an exercise from the course History of Mathematics\\University of Helsinki
+}
+\vspace{0.5cm}
+
+\section*{Paradox of Zeno - Achilles and tortoise}
+
+Achilles and tortoise are having a race, where the tortoise has a $100\,m$ head start. Let the speed of the tortoise be $v_t=\frac{2}{7}\frac{m}{s}$. Achilles runs $50$ times as fast, having the speed of $v_A=\frac{100}{7}\frac{m}{s}$ (wow, a new world record). When does Achilles catch up the tortoise?
+
+Before diving into the paradox, let's first solve the problem with basic physics.
+
+Let $x$ be the distance the tortoise moves before Achilles catches up. We have
+\begin{align*}
+    \frac{x}{v_t} & = \frac{100\,m+x}{v_A}\\
+    \frac{x}{\frac{2}{7}\frac{m}{s}} & = \frac{100\,m+x}{\frac{100}{7}\frac{m}{s}}\\
+    x & = \frac{100}{49}\,m.
+\end{align*}
+
+That is, the tortoise has moved just a bit over $2$ meters when Achilles reaches it. Achilles, on the other hand, has run $100\,m + \frac{100}{49}\,m = \frac{5000}{49}\,m$.
+
+The time $t$ that it takes for this to happen is $t = \frac{x}{v_t} = \frac{\frac{100}{49}m}{\frac{2}{7}\frac{m}{s}} = \frac{50}{7} s$.
+
+Let's consider the same problem with the approach of the most famous of the Zeno's paradoxes. The paradox states that every time Achilles has arrived to the point where the tortoise previously was, the tortoise has moved little bit further, making it impossible for Achilles to ever reach it. We can, however, still calculate the distance when Achilles has caught up the tortoise.
+
+Let $n \in \{0,1,2,...\}$ be the index set of iterations, where each iteration represents Achilles running to the point where the tortoise was at the beginning of the iteration. 
+
+Now, let $D_n$ be the distance that Achilles runs during iteration number $n$. We can first construct a recursive form
+\begin{equation*}
+    \begin{cases}
+    D_0 = 100\,m\\
+    D_n = \frac{v_t}{v_A}D_{n-1} = \frac{D_{n-1}}{50}\,, \quad n\geq 1
+    \end{cases}
+\end{equation*}
+from which we notice that the process can be described as a geometric series, where $D_n=\frac{D_0}{50^n}=\frac{100}{50^n}\,m$.
+
+Now we can calculate the distance Achilles as to run by taking infinite sum of the geometric series. We get
+\begin{equation*}
+    \sum_{k=1}^\infty D_k = \sum_{k=1}^\infty \frac{100}{50^k}\,m = \frac{100}{1-\frac{1}{50}}\,m = \frac{5000}{49}\,m,
+\end{equation*}
+which is the same result we got from the previous calculations.
+
+This means that math is not broken, though our friend Zeno here tries to make it appear that way.
+
+\end{document}
