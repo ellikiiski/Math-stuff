@@ -1,0 +1,43 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{parskip}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+
+{\large
+Elli Kiiski
+\par
+An exercise from the course History of Mathematics\\University of Helsinki
+}
+\vspace{0.5cm}
+
+\section*{Menelaus's theorem}
+
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width =60mm]{menelaus.eps}
+    \caption{The setting for Menelaus's theorem.}
+    \label{fig:menelaus}
+\end{figure}
+
+Menelaus's theorem states that for a line intersecting triangle $ABC$ in points $D$, $E$ and $F$ (see figure \ref{fig:menelaus}) holds
+\begin{equation*}
+    \frac{AD}{BD}\cdot\frac{BE}{CE}\cdot\frac{CF}{AF}=1\,.
+\end{equation*}
+
+Let's prove this by drawing a line $BP$ parallel to line $AC$ and hence forming two sets of similar triangles: $ADF \sim BDP$ and $BPE \sim FEC$.
+
+By the similarity we have $\frac{AF}{BP}=\frac{AD}{BD}$ and $\frac{BP}{CF}=\frac{BE}{CE}$. Multiplying these two equations with each other we get
+\begin{equation*}
+    \frac{AF}{BP}\cdot\frac{BP}{CF}=\frac{AD}{BD}\cdot\frac{BE}{CE} \quad \Leftrightarrow \quad \frac{AF}{CF}=\frac{AD}{BD}\cdot\frac{BE}{CE} \quad \Leftrightarrow \quad 1=\frac{AD}{BD}\cdot\frac{BE}{CE}\cdot\frac{CF}{AF}\,,
+\end{equation*}
+proving the Menelaus's theorem.
+
+\end{document}
