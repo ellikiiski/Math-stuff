@@ -1,0 +1,71 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{parskip}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+
+{\large
+Elli Kiiski
+\par
+An exercise from the course History of Mathematics\\University of Helsinki
+}
+\vspace{0.5cm}
+
+\section*{Trigonometry with chord function}
+
+In his work \textit{Almagest}, Ptolemy of Alexandria presented the table of chords, which was more extensive than an earlier table of chords by Hipparchus including only chords that were multiples of $\frac{\pi}{24}$.
+
+Chord is practically equivalent of sine function, as chord of the angle $\theta$ in a circle of radius $r$ can be written
+\begin{equation*}
+    \text{crd}\,\theta=2r\sin{\frac{\theta}{2}}\,.
+\end{equation*}
+
+For example, the trigonometric formula $\sin{2\alpha}=2\sin{\alpha}\cos{\alpha}$ can be written in terms of chord as follows:
+\begin{align*}
+    \sin{2\alpha} & = 2\sin{\alpha}\cos{\alpha}\\
+    \sin{2\alpha} & = 2\sin{\alpha}\sin{(\frac{\pi}{2}-\alpha)}\\
+    \frac{1}{2}\text{crd}\,4\alpha & = \frac{1}{2}\text{crd}\,{2\alpha}\, \text{crd}{(\pi-2\alpha)}\\
+    \text{crd}\,4\alpha & = \text{crd}\,{2\alpha}\, \text{crd}{(\pi-2\alpha)}\,.
+\end{align*}
+
+The formula can be illustrated as in the figures \ref{fig:chords} and \ref{fig:sincos}.
+
+The ''chord form'' of the formula can be proved geometrically as shown in the figure \ref{fig:chords}. In the unit circle we have a central angle $4\alpha$ and a corresponding inscribed angle $2\alpha$, which is also a central angle of the bigger circle of radius $R$. Now the chord of $4\alpha$ in the unit circle is also a cord of $2\alpha$ in the bigger circle, hence $\text{crd}\,4\alpha=R\cdot\text{crd}\,2\alpha$.
+
+On the other hand, the radius $R$ is a chord of $180^{\circ}-2\alpha$ in the unit circle, which yields $\text{crd}\,4\alpha=\text{crd}\,(180^{\circ}-2\alpha)\,\text{crd}\,2\alpha$.
+
+The original form of the formula with sine and cosine can be constructed with basic trigonometry as illustrated in figure \ref{fig:sincos}.
+
+\begin{figure}
+    \centering
+    \includegraphics[width =85mm]{chords.eps}
+    \caption{Formula $\text{crd}\,4\alpha = \text{crd}\,{2\alpha}\, \text{crd}{(\pi-2\alpha)}$ illustrated in the unit circle.}
+    \label{fig:chords}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width =85mm]{sincos.eps}
+    \caption{Formula $\sin{2\alpha} = 2\sin{\alpha}\cos{\alpha}$ illustrated in the unit circle.}
+    \label{fig:sincos}
+\end{figure}
+
+Chord of $60^{\circ}$ angle is known to be equal to the radius of the circle, as it forms an equilateral triangle. In the unit circle, this means $\text{crd}(60^{\circ})$ equals one or ''$60$ parts'', which can also be computed with sine: $\text{crd}(60^{\circ})=2\sin{(30^{\circ})}=2\cdot\frac{1}{2}=1$.
+
+If we try to use the chord formula for $120^{\circ}$ angle\footnote{Totta puhuen en oikein ymmärtänyt mitä tässä kohdassa haetaan takaa (oikeastaan koko tehtävä on aika epäselvä, enkä vieläkään ole varma onko ylempänä muodostamani kaava edes se, joka haluttiin). Olisi kiva saada tähän tehtävään jonkinlainen mallivastaus.}, we get
+\begin{equation*}
+    \text{crd}(120^{\circ})=\text{crd}\,(180^{\circ}-60^{\circ})\,\text{crd}\,60^{\circ} \quad \Longleftrightarrow \quad \text{crd}(120^{\circ})=\text{crd}(120^{\circ})\,,
+\end{equation*} 
+which does not help us much. However, it can be derived geometrically or computed with sine as follows
+\begin{equation*}
+    \text{crd}(120^{\circ})=2\sin{(60^{\circ})}=2\cdot\frac{\sqrt{3}}{2}=\sqrt{3}\,.
+\end{equation*}
+
+\end{document}
