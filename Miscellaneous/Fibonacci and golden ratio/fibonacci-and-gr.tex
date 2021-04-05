@@ -1,0 +1,40 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{parskip}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+
+{\large
+Elli Kiiski
+\par
+An exercise from the course History of Mathematics\\University of Helsinki
+}
+\vspace{0.5cm}
+
+\section*{Fibonacci sequence and golden ratio}
+
+The famous Fibonacci sequence starts with 1, 1, 2, 3, 5, 8, 13... and its members have the relationship $F_{n+1}-F_n=F_{n-1}$. Based on this, let's prove that
+\begin{equation*}
+    \lim_{n\rightarrow\infty}\frac{F_{n+1}}{F_n}=\Phi\,\text{, where $\Phi$ is the golden ratio.}
+\end{equation*}
+
+By the relationship above
+\begin{equation*}
+    F_{n+1}-F_n=F_{n-1} \quad \Leftrightarrow \quad \frac{F_{n+1}}{F_n}-1=\frac{F_{n-1}}{F_n} \quad \Leftrightarrow \quad \frac{F_{n+1}}{F_n}=1+\frac{F_{n-1}}{F_n}
+\end{equation*}
+and using this result recursively, we get
+\begin{align*}
+    \frac{F_{n+1}}{F_n} & = 1+\frac{F_{n-1}}{F_n} = 1+\frac{1}{\frac{F_n}{F_{n-1}}} = 1+\frac{1}{1+\frac{F_{n-1}}{F_{n-2}}}\\
+    & = 1+\frac{1}{1+\frac{1}{\frac{F_{n-2}}{F_{n-1}}}} = 1+\frac{1}{1+\frac{1}{1+\frac{F_{n-2}}{F_{n-3}}}} = 1+\frac{1}{1+\frac{1}{1+\dots}}\,,
+\end{align*}
+
+which is a known form for golden ratio $\Phi$.
+
+\end{document}
