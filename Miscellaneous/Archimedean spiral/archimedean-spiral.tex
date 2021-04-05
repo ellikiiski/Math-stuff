@@ -1,0 +1,37 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{parskip}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\begin{document}
+
+{\large
+Elli Kiiski
+\par
+An exercise from the course History of Mathematics\\University of Helsinki
+}
+\vspace{0.5cm}
+
+\section*{Area of Archimedean spiral}
+
+The graph of $r(\theta)=\theta a$, where $a$ is a constant, is called Archimedean spiral. Let's consider the area of such spiral when it has made one whole revolution. In that case we have the angle $\theta=2\pi$ and radius $r(2\pi)=2\pi a$.
+
+The length of spiral curve given an angle $\theta$ gets closer to the length of the corresponding arc of a circle, as $\theta$ gets smaller. This said, the differential $d\theta$ draws a curve with length $d\theta \,r(\theta)$ and sweeps the area $\frac{1}{2} d\theta\,r(\theta)r(\theta) = \frac{1}{2}(r(\theta))^2\,d\theta$.
+
+Now, by integrating from $0$ to $2\pi$ we get the area of one revolution
+\begin{equation*}
+    \int_0^{2\pi} \frac{1}{2}(r(\theta))^2\,d\theta = \int_0^{2\pi} \frac{1}{2} (\theta a)^2\,d\theta = \left[\frac{\theta^3 a^2}{6}\right]_0^{2\pi} = \frac{(2\pi)^3 a^2}{6} = \frac{4\pi^3 a^2}{3}\,.
+\end{equation*}
+
+When comparing this result to the area of a circle with radius $r(2\pi)=2\pi a$, we see that it equals three times the area of the Archimedean spiral after one revolution:
+\begin{equation*}
+    \pi(2\pi a)^2 = 4\pi^3 a^2 = 3 \cdot \frac{4\pi^3 a^2}{3}\,.
+\end{equation*}
+
+\end{document}
