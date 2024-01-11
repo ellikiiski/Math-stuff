@@ -12,7 +12,7 @@ Repository for all kind of math related papers from university courses and some 
 - [Fibonacci sequence and golden ratio](https://github.com/ellikiiski/Math-stuff/blob/main/Miscellaneous/Fibonacci%20and%20golden%20ratio/fibonacci-and-gr.pdf)
 
 ### In other repositories
-- [Batchelor's Thesis: The Order of Eluer's totient function](https://github.com/ellikiiski/Bachelors-thesis-2021/tree/master) (Unversity of Helsinki, 2021)
+- [Bachelor's Thesis: The Order of Eluer's totient function](https://github.com/ellikiiski/Bachelors-thesis-2021/tree/master) (Unversity of Helsinki, 2021)
 - [Fysiikan ja matematiikan menetelmien studio](https://github.com/ellikiiski/FYS-MAT-studio-2021-2022) (Aalto University, 2021-2022)
 - [Mathematics of photography (in Finnish)](https://github.com/ellikiiski/Valokuvan-matematiikka-2023) (University of Helsinki, 2023)
 
