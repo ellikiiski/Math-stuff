@@ -3,3 +3,8 @@
 *.dvi
 *.aux
 *.eps
+*.bbl
+*.bcf
+*.blg
+*.out
+*.xml
