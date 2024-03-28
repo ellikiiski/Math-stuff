@@ -2,6 +2,9 @@
 
 Repository for all kind of math related papers from university courses and some stuff just for fun.
 
+### Essays
+- [Euler ja lukuteoria](https://github.com/ellikiiski/Math-stuff/blob/main/Essays/Euler%20ja%20lukuteoria/euler_ja_lukuteoria_essee.pdf) (Final essay fo course History of mathematics, in Finnish)
+
 ### Miscellaneous
 - [Beer pong numbers](https://github.com/ellikiiski/Math-stuff/blob/main/Miscellaneous/Beer%20pong%20numbers/beer-pong-numbers.pdf)
 - [Paradox of Zeno](https://github.com/ellikiiski/Math-stuff/blob/main/Miscellaneous/Paradox%20of%20Zeno/paradox-of-zeno.pdf)
